@@ -13,8 +13,8 @@ def main():
 
     # Voice Selection
     voices = engine.getProperty('voices')
-    voice_options = [voice.name for voice in voices]
-    selected_voice = st.selectbox("Select Voice", voice_options)
+    voice_option = [voice.name for voice in voices]
+    selected_voice = st.selectbox("Select Voice", voice_option)
 
     # Set the selected voice
     selected_voice_id = [voice.id for voice in voices if voice.name == selected_voice][0]
